@@ -1,18 +1,19 @@
 Configure miss: whether the compiler is clang
 Configure miss: compiler option needed when checking for declarations
 Configure miss: g++ option to enable C++11 features
+Configure miss: crtdefs.h
+Configure miss: 32-bit host C ABI
+Configure miss: microuptime
+Configure miss: nanouptime
+Configure miss: __fseterr
 Configure miss: whether C++ compiler handles -Werror -Wunknown-warning-option
 Configure miss: dmd
 Configure miss: -g
 Configure miss: Java compiler
 Configure miss: Java virtual machine
-Configure miss: crtdefs.h
-Configure miss: microuptime
-Configure miss: nanouptime
-Configure miss: __fseterr
 Configure miss: whether printf supports the 'n' directive
+Configure miss: whether the compiler produces multi-arch binaries
 Configure miss: arithmetic hrtime_t
-Configure miss: 32-bit host C ABI
 Configure miss: strerror_r with POSIX signature
 Configure miss: whether C symbols are prefixed with underscore at the linker level
 Configure miss: whether to activate relocatable installation

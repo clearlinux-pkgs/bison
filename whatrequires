@@ -21,9 +21,6 @@ cgdb
 clamav
 collectd
 comedilib
-compat-gdbm-soname4
-compat-iptables-soname0.1.0
-compat-mariadb-soname18
 conntrack-tools
 coreutils
 cpio
