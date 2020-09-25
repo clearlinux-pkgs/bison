@@ -21,6 +21,7 @@ cgdb
 clamav
 collectd
 comedilib
+compat-hunspell-soname1.6
 conntrack-tools
 coreutils
 cpio
@@ -58,7 +59,6 @@ grass
 groff
 gstreamer
 gutenprint
-hunspell
 igt-gpu-tools
 indent
 iproute2
