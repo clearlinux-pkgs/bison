@@ -1,2 +1,0 @@
-# test suite is not parallel-safe
-make check
