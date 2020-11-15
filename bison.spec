@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x0DDCAA3278D5264E (akim@gnu.org)
 #
 Name     : bison
-Version  : 3.7.3
-Release  : 50
-URL      : https://mirrors.kernel.org/gnu/bison/bison-3.7.3.tar.xz
-Source0  : https://mirrors.kernel.org/gnu/bison/bison-3.7.3.tar.xz
-Source1  : https://mirrors.kernel.org/gnu/bison/bison-3.7.3.tar.xz.sig
+Version  : 3.7.4
+Release  : 51
+URL      : https://mirrors.kernel.org/gnu/bison/bison-3.7.4.tar.xz
+Source0  : https://mirrors.kernel.org/gnu/bison/bison-3.7.4.tar.xz
+Source1  : https://mirrors.kernel.org/gnu/bison/bison-3.7.4.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-3.0 GPL-3.0+
@@ -108,15 +108,15 @@ man components for the bison package.
 
 
 %prep
-%setup -q -n bison-3.7.3
-cd %{_builddir}/bison-3.7.3
+%setup -q -n bison-3.7.4
+cd %{_builddir}/bison-3.7.4
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1602991567
+export SOURCE_DATE_EPOCH=1605409416
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -136,10 +136,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1602991567
+export SOURCE_DATE_EPOCH=1605409416
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/bison
-cp %{_builddir}/bison-3.7.3/COPYING %{buildroot}/usr/share/package-licenses/bison/8624bcdae55baeef00cd11d5dfcfa60f68710a02
+cp %{_builddir}/bison-3.7.4/COPYING %{buildroot}/usr/share/package-licenses/bison/8624bcdae55baeef00cd11d5dfcfa60f68710a02
 %make_install
 %find_lang bison-gnulib
 %find_lang bison-runtime
