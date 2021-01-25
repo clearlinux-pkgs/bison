@@ -1,7 +1,6 @@
 # This file contains recursive sources that require this package
 JAGS
 OpenSP
-Pacemaker
 QGIS
 R
 acpica-unix2
@@ -19,17 +18,18 @@ bro
 cgdb
 clamav
 collectd
-compat-hunspell-soname1.6
 conntrack-tools
 coreutils
 cpio
 cscope
 ddd
+dovecot
 doxygen
 dtc
 e2fsprogs
 elfutils
 fetchmail
+findutils
 fio
 flatpak
 flex
