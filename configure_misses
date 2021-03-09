@@ -11,6 +11,7 @@ Configure miss: dmd
 Configure miss: -g
 Configure miss: Java compiler
 Configure miss: Java virtual machine
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: whether printf supports the 'n' directive
 Configure miss: whether the compiler produces multi-arch binaries
 Configure miss: arithmetic hrtime_t
