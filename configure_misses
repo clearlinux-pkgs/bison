@@ -1,29 +1,29 @@
-Configure miss: whether the compiler is clang
-Configure miss: compiler option needed when checking for declarations
-Configure miss: g++ option to enable C++11 features
-Configure miss: crtdefs.h
-Configure miss: 32-bit host C ABI
-Configure miss: microuptime
-Configure miss: nanouptime
-Configure miss: __fseterr
-Configure miss: whether C++ compiler handles -Werror -Wunknown-warning-option
-Configure miss: dmd
 Configure miss: -g
+Configure miss: 32-bit host C ABI
 Configure miss: Java compiler
 Configure miss: Java virtual machine
-Configure miss: gcc options needed to detect all undeclared functions
-Configure miss: whether printf supports the 'n' directive
-Configure miss: whether the compiler produces multi-arch binaries
+Configure miss: __fseterr
 Configure miss: arithmetic hrtime_t
+Configure miss: compiler option needed when checking for declarations
+Configure miss: crtdefs.h
+Configure miss: dmd
+Configure miss: g++ option to enable C++11 features
+Configure miss: gcc options needed to detect all undeclared functions
+Configure miss: microuptime
+Configure miss: nanouptime
+Configure miss: obstacks that work with any size object
+Configure miss: posix_spawn_file_actions_addchdir
 Configure miss: strerror_r with POSIX signature
 Configure miss: whether C symbols are prefixed with underscore at the linker level
-Configure miss: whether to activate relocatable installation
-Configure miss: whether use of TIOCGWINSZ requires termios.h
+Configure miss: whether C++ compiler handles -Werror -Wunknown-warning-option
 Configure miss: whether gethrtime is declared
-Configure miss: whether pthread_rwlock_rdlock prefers a writer to a reader
 Configure miss: whether mbrtowc stores incomplete characters
 Configure miss: whether mbswidth is declared in <wchar.h>
-Configure miss: obstacks that work with any size object
+Configure miss: whether printf supports the 'n' directive
+Configure miss: whether pthread_rwlock_rdlock prefers a writer to a reader
 Configure miss: whether snprintf fully supports the 'n' directive
-Configure miss: sys/single_threaded.h
+Configure miss: whether the compiler is clang
+Configure miss: whether the compiler produces multi-arch binaries
+Configure miss: whether to activate relocatable installation
+Configure miss: whether use of TIOCGWINSZ requires termios.h
 Configure miss: whether use of struct winsize requires sys/ptem.h

@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x0DDCAA3278D5264E (akim@gnu.org)
 #
 Name     : bison
-Version  : 3.7.6
-Release  : 53
-URL      : https://mirrors.kernel.org/gnu/bison/bison-3.7.6.tar.xz
-Source0  : https://mirrors.kernel.org/gnu/bison/bison-3.7.6.tar.xz
-Source1  : https://mirrors.kernel.org/gnu/bison/bison-3.7.6.tar.xz.sig
+Version  : 3.8
+Release  : 54
+URL      : https://mirrors.kernel.org/gnu/bison/bison-3.8.tar.xz
+Source0  : https://mirrors.kernel.org/gnu/bison/bison-3.8.tar.xz
+Source1  : https://mirrors.kernel.org/gnu/bison/bison-3.8.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-3.0 GPL-3.0+
@@ -108,23 +108,23 @@ man components for the bison package.
 
 
 %prep
-%setup -q -n bison-3.7.6
-cd %{_builddir}/bison-3.7.6
+%setup -q -n bison-3.8
+cd %{_builddir}/bison-3.8
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1615304006
+export SOURCE_DATE_EPOCH=1631053784
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -136,10 +136,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1615304006
+export SOURCE_DATE_EPOCH=1631053784
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/bison
-cp %{_builddir}/bison-3.7.6/COPYING %{buildroot}/usr/share/package-licenses/bison/31a3d460bb3c7d98845187c716a30db81c44b615
+cp %{_builddir}/bison-3.8/COPYING %{buildroot}/usr/share/package-licenses/bison/31a3d460bb3c7d98845187c716a30db81c44b615
 %make_install
 %find_lang bison-gnulib
 %find_lang bison-runtime
@@ -159,7 +159,6 @@ cp %{_builddir}/bison-3.7.6/COPYING %{buildroot}/usr/share/package-licenses/biso
 /usr/share/bison/bison-default.css
 /usr/share/bison/m4sugar/foreach.m4
 /usr/share/bison/m4sugar/m4sugar.m4
-/usr/share/bison/skeletons/README-D.txt
 /usr/share/bison/skeletons/bison.m4
 /usr/share/bison/skeletons/c++-skel.m4
 /usr/share/bison/skeletons/c++.m4
@@ -170,6 +169,7 @@ cp %{_builddir}/bison-3.7.6/COPYING %{buildroot}/usr/share/package-licenses/biso
 /usr/share/bison/skeletons/d.m4
 /usr/share/bison/skeletons/glr.c
 /usr/share/bison/skeletons/glr.cc
+/usr/share/bison/skeletons/glr2.cc
 /usr/share/bison/skeletons/java-skel.m4
 /usr/share/bison/skeletons/java.m4
 /usr/share/bison/skeletons/lalr1.cc
